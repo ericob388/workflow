@@ -14,6 +14,9 @@ class TestHelloHandler(unittest.TestCase):
     def test_no_name_key(self):
         with self.assertRaises(KeyError):
             handle_event(dict())
+            
+    def test_failure(self):
+        self.assertTrue(false)
 
 
 if __name__ == '__main__':
